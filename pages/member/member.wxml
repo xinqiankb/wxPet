@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <view class="userinfo-border">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>    
+    </view>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <span class="iconfont icon-setting wx-setting"></span>
+  </view>
+  <view class="tipsList">
+    <ul>
+    	<li class="wx-col mypets" bindtap="gotopets">我的宠物<span class="iconfont icon-arrow-right showmore"></span></li>
+    	<li class="wx-col mycompetitions" bindtap="gotocompetitions">我的战绩<span class="iconfont icon-arrow-right showmore"></span></li>
+    	<li class="wx-col myranking" bindtap="gotoRinking">排行榜<span class="iconfont icon-arrow-right showmore"></span></li>
+    </ul>
+  </view>
+</view>
+<loading hidden="{{showLoading}}" class="loading" type="primary">
+  加载中...
+</loading>

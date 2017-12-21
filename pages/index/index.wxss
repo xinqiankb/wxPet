@@ -1,0 +1,11 @@
+/**index.wxss**/
+.main{width: 100%;}
+.wrap{overflow: hidden}
+.title{width: 100%;height: 5rem;margin-top: 1rem}
+.titleImg{width: 100%;height: 100%;background: url('http://p0vydhsfu.bkt.clouddn.com/indexIcon.png') no-repeat center center; background-size: cover}
+.userinfo{width: 100%;text-align: center;margin-top: 1rem;}
+.userinfo .userImg{width: 6rem;height: 6rem;border-radius: 50%;margin: 0 auto}
+.userinfo .userImg image{width: 100%; height: 100%;border-radius: 50%}
+.userinfo .username{line-height: 2rem;}
+.userinfo .tips{line-height: 1.5rem;font-size: 14px;}
+.Go{position: absolute;bottom: 2.5rem;left: 50%; margin-left: -4.25rem; width:  8.5rem;height: 6.5rem;}

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="wrap">
+  <view class="title">
+    <view class="titleImg"></view>
+  </view>
+
+  <view class="userinfo">
+    <view class="userImg"><image src="{{userInfo.avatarUrl}}"></image></view>
+  </view>
+  <view class="Go" style="background: url('http://p0vydhsfu.bkt.clouddn.com/goo.png') no-repeat center center;background-size: cover" bindtap='toNextPage'></view>
+</view>
+<loading hidden="{{loadingShow}}" class="loading" type="primary">加载中……</loading>

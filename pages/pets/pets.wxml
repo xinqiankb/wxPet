@@ -1,0 +1,44 @@
+<view class="petSetting">
+  <view class="petInfo">
+    <view class="petImg">
+      <image src="{{petInfo.petimg}}"></image>
+    </view>
+    <view class="petLevel">
+      <ul class="petAllDidgtal">
+        <li><span class="petName">名称：{{petname}}</span><span style="padding-left: 0.3rem;color: red" bindtap="changeName">修改</span></li>
+        <li><span>等级： {{petInfo.level}}</span></li>
+      </ul>
+    </view>
+    <view class="help">?</view>
+  </view>
+  <view class="petProperty">
+    <view class="info">
+      <ul>
+        <block wx:for="{{petInfo.petattr}}" wx:key="unique">
+          <li><span>{{item.name}}：</span><span>{{item.value}}</span><span id="{{item.attr}}" style="float: right;margin-right: 1rem;font-size: 12px" wx:if="{{item.isshow === 1}}" bindtap="updateDigital">提升</span></li>
+        </block>
+      </ul>
+    </view>
+
+    <view class="doBlock">
+      <span class="btn gopk" bindtap="toToPk">去pk</span>
+    </view>
+  </view>
+</view>
+
+<view class="nameChangeLayout" hidden="{{showname}}">
+  <div class="namebox">
+  	<div class="newInfo">
+  		<label for="">新名字： </label>
+		  <input type="text" bindinput="bindKeyInput" placeholder='请输入新名称' />
+  	</div>
+	  <div class="submitNameBtn"><span class="btn" bindtap="nameChangeSubmit">确定</span></div>
+  </div>
+</view>
+<view class="attrUpdate {{showUpdate}}">
+  <div style="top: {{topdis}}%;">
+    <span>+{{attrData}}</span>
+    <span>恭喜您获得{{attrData}}属性加成</span>
+  </div>
+</view>
+<loading type="primary" hidden="doSomething">请稍后...</loading>

@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/member/member",
+    "pages/pets/pets",
+    "pages/guide/guide",
+    "pages/play/play",
+    "pages/rank/rank",
+    "pages/compentition/compentition"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微宠大乱斗",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#fb8435",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabBar/index.png",
+      "selectedIconPath": "images/tabBar/indexSe.png"
+      }, {
+        "pagePath": "pages/pets/pets",
+        "text": "萌宠",
+        "iconPath": "images/tabBar/pets.png",
+        "selectedIconPath": "images/tabBar/petsSe.png"
+      }, {
+        "pagePath": "pages/member/member",
+        "text": "我的",
+        "iconPath": "images/tabBar/member.png",
+        "selectedIconPath": "images/tabBar/memberSe.png"
+      }
+    ]
+  }
+}

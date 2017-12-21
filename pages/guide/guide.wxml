@@ -1,0 +1,75 @@
+ <!--index.wxml-->
+<view class="wrap">
+  <!--maincontent  -->
+  <view class="main">
+    <view class="handleSlide" style="width: {{initWidth}}px; margin-left: {{slideWidth}}px">
+      <view class="page pageOne" style="width: {{singleWidth}}px">
+        <view>你是软妹子还是萌汉子呢？</view>
+        <view id="1" class="selectbox leftSelect" bindtap='selectSex' style='margin-right: 1rem'>
+          <view class="manImg"></view>
+          <view class="selectTitle">我是汉子<icon wx:if="{{sex == 1}}" type="success" size="16"></icon></view>
+        </view>
+        <view id="0" class="selectbox rightSelect"  bindtap='selectSex' style='margin-left: 1rem'>
+          <view class="fmanImg"></view>
+          <view class="selectTitle">我是妹子<icon wx:if="{{sex == 0}}" type="success" size="16"></icon></view>    
+        </view>
+        <view style='margin-top: 1.5rem'>
+            <view class="pre dobtn" bindtap='goIndex'>首页</view>
+            <view class="next dobtn" hidden="{{selectName}}" bindtap='goToNextBlock'>下一步</view>
+        </view>
+      </view>
+      <view class="page pagetwo" style="width: {{singleWidth}}px" hidden='{{showPage.isPageTwo}}'>
+        <view class="pets">
+          <view>请选择你的萌宠</view>
+          <view class="lineOne" style='margin-top: 1rem'>
+            <view class="petsChilrden petLeft">
+              <view id="1" style="background: url({{pet[0].url}}) no-repeat center center;background-size: cover" bindtap='showName'></view>
+              <view class="petname" wx:if="{{petid == 1}}">ceshi1<icon type="success" size="16"></icon></view>
+            </view>
+            <view class="petsChilrden petRight">
+              <view id="2" style="background: url({{pet[1].url}}) no-repeat center center;background-size: cover" bindtap='showName'></view>
+              <view class="petname" wx:if="{{petid == 2}}">ceshi2<icon type="success" size="16"></icon></view>
+            </view>
+          </view>
+
+          <view class="lineOne">
+            <view class="petsChilrden petLeft">
+              <view id="3" style="background: url('{{pet[2].url}}') no-repeat center center;background-size: cover" bindtap='showName'></view>
+              <view class="petname" wx:if="{{petid == 3}}">ceshi3<icon type="success" size="16"></icon></view>
+            </view>
+            <view class="petsChilrden petRight">
+              <view id="4" style="background: url('{{pet[3].url}}') no-repeat center center;background-size: cover" bindtap='showName'></view>
+              <view class="petname" wx:if="{{petid == 4}}">ceshi4<icon type="success" size="16"></icon></view>
+            </view>
+          </view>
+
+          <view class="lineOne">
+            <view class="petsChilrden" style='margin: 0 auto'>
+              <view id="5" style="background: url('{{pet[4].url}}') no-repeat center center;background-size: cover;margin: 0 auto" bindtap='showName'></view>
+              <view class="petname" wx:if="{{petid == 5}}">ceshi5<icon type="success" size="16"></icon></view>
+            </view>
+          </view>
+          <view style='margin-top: 1.5rem'>
+            <view class="pre dobtn" bindtap='goToPreBlock'>上一步</view>
+            <view class="next dobtn" hidden="{{selectName}}" bindtap='goToNextBlock'>下一步</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="page pateThree" style="width: {{singleWidth}}px" hidden='{{showPage.isPageThr}}'>
+          <view class="nameChangeLayout">
+            <div style="margin-bottom: 1rem;text-align: center">请给你的萌宠取个名字</div>
+            <div class="namebox">
+              <div class="newInfo">
+                <input type="text" bindinput="bindKeyInput" placeholder='请输入新名称' />
+              </div>
+            </div>
+          </view>
+          <view style='margin-top: 1.5rem'>
+            <view class="pre dobtn" bindtap='goToPreBlock'>上一步</view>
+            <view class="next dobtn" hidden="{{selectName}}" bindtap='nameChangeSubmit'>确定</view>
+          </view>        
+      </view>
+    </view>
+  </view>
+</view>

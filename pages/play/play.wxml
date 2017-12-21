@@ -1,0 +1,17 @@
+<view>
+  webscoket测试
+</view>
+
+<view>
+  <label>消息</label>
+  <input bindinput='handleInputValue' placeholder='请输入信息'></input>
+  <button type='primary' bindtap='pushMessage'>发送</button>
+</view>
+<button type="success" bindtap='connectWebSocket'>开始</button>
+<button type="success" bindtap='closeWebsocket'>关闭</button>
+
+<view>
+  <ul>
+    <li style="display:block" wx:for="{{recevieList}}" wx:key="unique">收到：{{item.date}}</li>
+  </ul>
+</view>

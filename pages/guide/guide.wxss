@@ -1,0 +1,24 @@
+/**index.wxss**/
+.main{width: 100%;overflow-x: hidden}
+.selectbox{width: 5rem;height: 5rem;display: inline-block;margin: 0 auto;margin-top: 1rem}
+.page{width: 100%;display: inline-block;text-align: center;vertical-align: top}
+.handleSlide{overflow: hidden;transform-origin: center center; transition: all 0.3s ease-in-out;overflow: hidden}
+.page .lineOne{width: 100%; height: 5.5rem;margin-top: 1rem;}
+.page .lineOne .petsChilrden{position: relative;width: 5rem; height: 6rem;vertical-align: top}
+.page .lineOne .petsChilrden view{width: 5rem; height: 5rem;vertical-align: top;} 
+.petname{position: absolute;bottom: 0;left: 0;text-align: center;width: 100%;height: 1rem !important;font-size: 0.8}
+.petLeft{float: left;margin-left: 1rem}
+.petRight{float: right;margin-right: 1rem}
+.manImg{width: 100%;height: 100%;background: url('http://p0vydhsfu.bkt.clouddn.com/man.png') no-repeat center center;background-size: cover}
+.fmanImg{width: 100%;height: 100%;background: url('http://p0vydhsfu.bkt.clouddn.com/fman.png') no-repeat center center;background-size: cover}
+.selectTitle{display: inline-flex;align-items: center;justify-content: center}
+.pre{border: 1px solid #000;padding: 10px;width: 2.5rem;height: 0.6rem;margin: 0 auto;line-height: 0.6rem;font-size: 10px;border-radius: 0.5rem;background-color: #fff;color: #000;margin: 0 1rem;position: relative;z-index: 11}
+.next{border: 1px solid #fb8435;padding: 10px;width: 2.5rem;height: 0.6rem;margin: 0 auto;line-height: 0.6rem;font-size: 10px;border-radius: 0.5rem;background-color: #fb8435;color: #fff;position: relative;z-index: 11}
+.dobtn{display: inline-block;position: relative;z-index: 11;margin-top: 1rem}
+
+.nameChangeLayout{margin-top: 2rem}
+.namebox div{display: block;margin-top: 1rem}
+.namebox label{display: block;width: 5rem;padding: 0.5rem;}
+.namebox input{display: block;margin-left: 0.5rem;border-bottom: 1px solid #000;height: 2rem;line-height: 2rem;}
+.namebox .submitNameBtn{text-align: center;margin-top: 0.8rem}
+.submitNameBtn span{border: 1px solid #0aca09; color: #fff;background-color: #0aca09}
